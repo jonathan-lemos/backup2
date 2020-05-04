@@ -10,7 +10,7 @@
 
 class Decryptor {
 public:
-    Decryptor() = delete;
+    Decryptor() = default;
     virtual ~Decryptor() = default;
 
     virtual std::vector<unsigned char> Process(const unsigned char* data, size_t data_len) = 0;
